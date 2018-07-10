@@ -159,12 +159,6 @@ module Kitchen
         command = "#{env_vars} #{command}" if !config[:env_vars].none?
 
         <<-CMD
-          # Doesn't work with sudo
-          #if [ ! -x "#{config[:goss_download_path]}" ]; then
-          #    echo "Something failed cant execute '${command}'"
-          #    exit 1
-          #fi
-
           test_failed=0
           for VARIABLE in #{get_test_name}
           do
