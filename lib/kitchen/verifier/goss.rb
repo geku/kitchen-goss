@@ -8,7 +8,7 @@ module Kitchen
       require 'pathname'
 
       kitchen_verifier_api_version 1
-      plugin_version Kitchen::VERSION
+      plugin_version Kitchen::Verifier::GOSS_VERSION
 
       #
       default_config :sleep, 0
