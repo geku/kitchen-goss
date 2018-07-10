@@ -87,7 +87,7 @@ module Kitchen
           conn.execute(run_command)
         end
       rescue Kitchen::Transport::TransportFailed => ex
-        if ex.message .include? "<TEST EXECUTION FAILED>"
+        if ex.message.include? "<TEST EXECUTION FAILED>"
           raise ActionFailed, "Action #verify failed for #{instance.to_str}."
         else
           raise ActionFailed, ex.message
