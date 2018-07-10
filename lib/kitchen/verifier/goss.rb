@@ -1,4 +1,5 @@
 require 'kitchen/verifier/base'
+require 'kitchen/verifier/goss_version'
 
 module Kitchen
   module Verifier
